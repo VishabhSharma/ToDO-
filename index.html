@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List | 2023</title>
+
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/1fb8ba0264.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section id="workSpace" class="workSpace">
+        <div class="nav">
+            <div class="logo">
+                <img src="/static/logo.gif" alt="Logo Icon">
+                <h3>To-Do</h3>
+            </div>
+        </div>
+        <div class="workSpaceMain">
+            <h2>Work-Spaces</h2>
+            <div class="space">
+                <div class="heading">
+                    <img src="/static/pointer.svg" alt=".">
+                    <h3>Main</h3>
+                </div>
+                <div class="noOfTask">
+                    <h5>You have 4 task in main</h5>
+                </div>
+                <ul>
+                    <li>
+                        <div class="task">
+                            <div class="taskName"><h4>task1</h4></div>
+                            <div class="function">
+                                <img src="/static/done.svg" alt="Done">
+                                <img src="/static/delete.svg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="task">
+                        <div class="taskName"><h4>task1</h4></div>
+                        <div class="function">
+                            <img src="/static/done.svg" alt="Done">
+                            <img src="/static/delete.svg" alt="">
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="task">
+                        <div class="taskName"><h4>task1</h4></div>
+                        <div class="function">
+                            <img src="/static/done.svg" alt="Done">
+                            <img src="/static/delete.svg" alt="">
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="task">
+                        <div class="taskName"><h4>task1</h4></div>
+                        <div class="function">
+                            <img src="/static/done.svg" alt="Done">
+                            <img src="/static/delete.svg" alt="">
+                        </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author">
+            <h5>Design & Devlope By Sushmit Katkale</h5>
+            <h5>&copy; Sushmit Katkale</h5>
+        </div>
+    </section>  
+
+    <div class="workSpaceToggle">
+        <img src="/static/menu.svg" alt="">
+    </div>
+    <section id="main" class="main">
+        <div class="nav">
+            <h4>Wake Up And Smell The Routine…</h4>
+            <div class="menu">
+                <img src="/static/search.svg" alt="search" class="hover">
+                <img src="/static/plus.svg" alt="Add Task" id="addNewTaskBtn" class="hover">
+                <img src="/static/notifications-active.svg" alt="notification" class="hover">
+                <div class="profile">
+                    <h3>G</h3>
+                </div>
+            </div>
+        </div>
+        <div class="mainTask">
+            <div class="imgDiv">
+                <img src="/static/img/programming/erroe.svg" alt="">
+            </div>
+            <div class="bottomDiv">
+                <div class="setting dropTask">
+                    <img src="/static/delete.svg" alt="">
+                </div>
+                <div class="taskInfo">
+                    <img src="/static/rightArrow.svg" alt="" style="transform: rotate(180deg);" id="prevTask">
+                    <div class="taskDetail">
+                        <h2>Add Task</h2>
+                        <h4>Add Task</h4>
+                    </div>
+                    <img src="/static/rightArrow.svg" alt="" id="nextTask">
+                </div>
+                <div class="doneTask">
+                    <img src="/static/tick.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="roughSection hide">
+        <section id="addNewTask" class="addNewTask">
+            <div class="newTaskImgDiv">
+                <img src="/static/img/schedule-planning.svg" alt="">
+            </div>
+            <div class="newTaskFrom">
+                <h3>Add New Task</h3>
+                <div class="inputField">
+                    <h4>Task Name:</h4>
+                    <input type="text" value="Task1" id="newTaskworkName">
+                </div>
+                <div class="inputField">
+                    <h4>Task Due Date:</h4>
+                    <input type="date" id="newTaskDate">
+                </div>
+                <div class="inputField">
+                    <h4>WorkSpace:</h4>
+                    <select class="workSpacesInputField" id="newTaskworkSpace">   
+                    </select>
+                </div>
+                <div class="inputField">
+                    <h4>Task Image:</h4>
+                    <select class="workImgesInputField" id="newTaskImg">
+                        <option value="businessman-attending-video-conference">businessman-attending-video-conference</option>
+                        <option value="concept-of-importance-of-work-place-for-employees-in-business">concept-of-importance-of-work-place-for-employees-in-business</option>
+                        <option value="interface-research">interface-research</option>
+                        <option value="website-design">website-design</option>
+                        <option value="website-interface">website-interface</option>   
+                    </select>
+                </div>
+                <div class="inputField">
+                    <h4>Task Description:</h4>
+                </div>
+                <div class="inputField">
+                    <textarea name="task Description" id="newTaskDescription" rows="10"></textarea>
+                </div>
+                <div class="buttons">
+                    <div class="cancel" id="cancel">
+                        <h4>Cancel Task</h4>
+                    </div>
+                    <dic class="addThisTask" id="addThisTask">
+                        <h4>Add Task</h4>
+                    </dic>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
